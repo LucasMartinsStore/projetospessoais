@@ -1,0 +1,329 @@
+/*Configuração padrão */
+
+:root{
+    --main-color: #fff ;
+    --standard-title: "Roboto",sans-serif;
+    --price-color: #0fbcf9 ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+}
+
+h1,
+p{
+    color: #6c757d;
+}
+
+
+
+
+
+/* Configuracao Navbar */
+.navbar-brand{
+    font-family: 'Cinzel', serif;
+    color:#87CEEB; 
+    padding-top: 15px;
+}
+
+.navbar-brand span{
+    color:#98FB98 ;
+}
+
+ul li a{
+    font-family: 'Roboto', serif;
+    font-size: 1.2em;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+}
+
+ul li a.nav-link.nav-main:hover{
+    background-color: #4682B4;
+    color: #000;
+   transition: .6s;
+}
+
+/*Configuração do Toggler */
+button span{
+    color: #edf2f4;
+}
+
+/*Configurações redes sociais */
+
+.social-media{
+    font-size: 1.5em;
+}
+ul li a.facebook:hover{
+    color: #3b5998;
+    transition: .6s;
+}
+
+ul li a.instagram:hover{
+    color: #fb3958;
+    transition: .6s;
+
+}
+
+ul li a.twitter:hover{
+    color:#00aced;
+    transition: .6s;
+
+}
+
+ul li a.whatsapp:hover{
+    color:#4FCE5D;
+    transition: .6s;
+
+}
+
+/*Configurações banner */
+
+#banner-main{
+    background-color: #f1faee;
+}
+
+#banner-main h1{
+    color:#37d72f; 
+}
+
+
+.img-banner::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 350px;
+    top: 0;
+    background-color:#37d72f;
+    width: 400px;
+    height: 100%;
+    transform-origin: top;
+    transform: skewX(-25deg);
+   
+}
+
+
+
+.img-banner img{
+    height: 80vh;
+    z-index: 1;
+} 
+
+/*configuração Sobre */
+.about-section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section .about-itens{
+       background-image: url(../img/academia.jpg);
+       background-repeat: no-repeat;
+       background-position: left;
+       background-size: 55%;
+       overflow: hidden;
+       padding: 100px 0;
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 100px;
+    border-radius: 80px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #1a535c;
+}
+
+.text{
+    
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+
+/*Quotes section */
+
+.quotes-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:#33d1a0;
+}
+
+.box-quotes{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 420px;
+    margin: 20px;
+    background-color: #121e27;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content-quote{
+    padding: 30px;
+    text-align: center;
+}
+
+.content-quote .img-quote{
+    max-width: 48px;
+
+}
+
+.content-quote .img-user{
+    max-width: 72px;
+    border-radius: 50%;
+
+}
+
+.content-quote  h3{
+    color: #33d1a0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 5px;
+
+}
+
+.content-quote p{
+    color: #ffff;
+    padding: 20px 0;
+
+}
+
+
+/*Tabela de preços */
+.table-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.pricing-table{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.pricing-card{
+    flex: 1;
+    width: 360px;
+    background-color: #fff;
+    margin: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: #2d2d2d;
+    transition: .3s linear;
+}
+
+.pricing-card h3{
+    background-color: var(--price-color);
+    display: inline-block;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 0 0 20px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .4s linear;
+}
+
+.pricing-card:hover .pricing-card-header{
+    box-shadow: 0 0 0 26em var(--price-color);
+}
+
+.price{
+    font-size: 70px;
+    color: var(--price-color);
+    margin: 40px 0;
+    transition: .2s linear;
+
+
+}
+
+.price sup, .price span{
+    font-size: 22px;
+    font-weight: 700;
+
+}
+
+.pricing-card:hover, 
+.pricing-card:hover .price{
+    color: #fff;
+}
+
+.pricing-card li{
+    font-size: 16px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.order-btn{
+    display: inline-block;
+    margin-bottom: 40px;
+     margin-top: 80px;
+     border: 1px solid var(--price-color);
+     color: var(--price-color);
+     padding: 18px 40px;
+     border-radius: 8px;
+     text-transform: uppercase;
+     font-weight: 500;
+     transition: .3s linear;
+    
+}
+
+.order-btn:hover{
+    background-color: var(--price-color);
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+.pricing-card ul li{
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Medias queries */
+
+
+
+
